@@ -34,5 +34,46 @@
       <li>Remove the cheesecake from the oven. Place in fridge until set (about 4 hours or best overnight)</li>
       <li>Serve with berries or topping of choice.</li>
     </ol>
+
+    <section id="reviews">
+      <h2>Reviews</h2>
+      <form action="/reviews" method="post">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name">
+
+        <br><br>
+
+        <label for="rating">Rating</label>
+        <input type="radio" value="1" name="rating" checked>1</input>
+        <input type="radio" value="2" name="rating">2</input>
+        <input type="radio" value="3" name="rating">3</input>
+        <input type="radio" value="4" name="rating">4</input>
+        <input type="radio" value="5" name="rating">5</input>
+
+        <br><br>
+
+        <label for="expertise">Cooking Expertise:</label>
+        <select name="expertise" id="expertise">
+          <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Experise</option>
+          <option value="sometimes">Sometimes Cook</option>
+          <option value="everyday">Cook Everyday</option>
+          <option value="hobby">Hobby</option>
+          <option value="professional">Professional Chef</option>
+        </select>
+
+        <br><br>
+
+        <label>Review<textarea name="review"></textarea></label>
+
+        <br>
+
+        <input type="submit" value="Submit Review">
+
+      </form>
+
+    </section>
+    <footer>
+      <p>Original recipe found <a href="http://www.kingarthurflour.com/recipes/easy-cheesecake-recipe">here</a></p>
+    </footer>
   </body>
 </html>
