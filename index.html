@@ -3,27 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>My Cheesecake Recipe</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
     <h2 id="title">My Cheesecake Recipe</h2>
-    <ul>
+    <ul id="links">
       <li><a href="#desc">Description</a><br></li>
       <li><a href="#ing">Ingredients</a><br></li>
       <li><a href="#dir">Directions</a><br></li>
     </ul>
-    <img src="http://d2gk7xgygi98cy.cloudfront.net/1080-3-large.jpg" width="650" height="500">
-    <h2>Description</h2>
-    <a name="desc"></a>
-    <p>This is the easiest cheesecake recipe ever. It's quick, versatile, cheap, and quite tasty!<a href="https://en.wikipedia.org/wiki/Cheesecake"> Read more here</a></p>
-    <h2>Ingredients</h2>
-    <a name="ing"></a>
-    <ul>
-      <li>2 packages of cream cheese</li>
-      <li>2 large eggs</li>
-      <li>2/3 cups white sugar</li>
-      <li>1 teaspoon vanilla extract</li>
-      <li>I premade graham cracker pie crust</li>
-    </ul>
+    <img id="cake" src="http://d2gk7xgygi98cy.cloudfront.net/1080-3-large.jpg" width="650" height="500">
+
+    <section id="desc">
+      <h2>Description</h2>
+      <a name="desc"></a>
+      <p>This is the easiest cheesecake recipe ever. It's quick, versatile, cheap, and quite tasty!<a href="https://en.wikipedia.org/wiki/Cheesecake"><br> Read more here</a></p>
+    </section>
+
+    <section id="ingredients">
+      <h2>Ingredients</h2>
+      <ul>
+        <li>2 packages of cream cheese</li>
+        <li>2 large eggs</li>
+        <li>2/3 cups white sugar</li>
+        <li>1 teaspoon vanilla extract</li>
+        <li>I premade graham cracker pie crust</li>
+      </ul>
+    </section>
+
     <h2>Directions</h2>
     <a name="dir"></a>
     <ol>
@@ -37,40 +44,41 @@
 
     <section id="reviews">
       <h2>Reviews</h2>
-      <form action="/reviews" method="post">
-        <label for="name">Name</label>
-        <input id="name" type="text" name="name">
+      <div id="moveReviewContents">
+        <form action="/reviews" method="post">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name">
 
-        <br><br>
+          <br><br>
 
-        <label for="rating">Rating</label>
-        <input type="radio" value="1" name="rating" checked>1</input>
-        <input type="radio" value="2" name="rating">2</input>
-        <input type="radio" value="3" name="rating">3</input>
-        <input type="radio" value="4" name="rating">4</input>
-        <input type="radio" value="5" name="rating">5</input>
+          <label for="rating">Rating</label>
+          <input type="radio" value="1" name="rating" checked>1</input>
+          <input type="radio" value="2" name="rating">2</input>
+          <input type="radio" value="3" name="rating">3</input>
+          <input type="radio" value="4" name="rating">4</input>
+          <input type="radio" value="5" name="rating">5</input>
 
-        <br><br>
+          <br><br>
 
-        <label for="expertise">Cooking Expertise:</label>
-        <select name="expertise" id="expertise">
-          <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Experise</option>
-          <option value="sometimes">Sometimes Cook</option>
-          <option value="everyday">Cook Everyday</option>
-          <option value="hobby">Hobby</option>
-          <option value="professional">Professional Chef</option>
-        </select>
+          <label for="expertise">Cooking Expertise:</label>
+          <select name="expertise" id="expertise">
+            <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Experise</option>
+            <option value="sometimes">Sometimes Cook</option>
+            <option value="everyday">Cook Everyday</option>
+            <option value="hobby">Hobby</option>
+            <option value="professional">Professional Chef</option>
+          </select>
 
-        <br><br>
+          <br><br>
 
-        <label>Review<textarea name="review"></textarea></label>
+          <label>Review<textarea name="review"></textarea></label>
 
-        <br>
+          <br>
 
-        <input type="submit" value="Submit Review">
+          <input type="submit" value="Submit Review">
 
-      </form>
-
+        </form>
+      </div>
     </section>
     <footer>
       <p>Original recipe found <a href="http://www.kingarthurflour.com/recipes/easy-cheesecake-recipe">here</a></p>

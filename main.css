@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#title{
+  text-align: center;
+  font-size: 60px;
+}
+
+#desc > p {
+  padding-left: 30px;
+}
+
+#links{
+  text-align: center;
+}
+
+#links > li{
+  display: inline-block;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+#cake{
+  display: inline-block;
+  float: right;
+  padding-right: 50px;
+  padding-top: 50px;
+  border-radius: 100px;
+}
+
+#moveReviewContents{
+  padding-left: 30px;
+}
