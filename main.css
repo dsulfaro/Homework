@@ -11,6 +11,10 @@ a {
   font-size: 60px;
 }
 
+#desc {
+  margin-top: 70px;
+}
+
 #desc > p {
   padding-left: 30px;
 }
@@ -41,6 +45,10 @@ ol li:nth-of-type(2n) {
   padding-left: 30px;
 }
 
+#ingredients {
+  margin-top: 100px;
+}
+
 label {
   padding-bottom: 50px;
 }
@@ -65,4 +73,29 @@ input[type="radio"]:checked {
 input[type="radio"]:focus {
   background-position: 30px 30px;
   outline: none;
+}
+
+body {
+    margin: 0 auto;
+    width: 900px;
+}
+
+aside {
+    width: 180px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+aside > ul > li {
+  margin: 18px;
+}
+
+#dir-sec {
+  margin-top: 50px;
+}
+
+section > ol > li {
+  width: 800px;
+  margin: 15px;
+  padding: 10px;
 }
