@@ -6,13 +6,18 @@ a {
   text-decoration: none;
 }
 
+nav {
+  margin-top: -60px;
+}
+
 #title{
   text-align: center;
-  font-size: 60px;
+  float: left;
 }
 
 #desc {
   margin-top: 70px;
+  padding-top: 200px;
 }
 
 #desc > p {
@@ -20,7 +25,7 @@ a {
 }
 
 #links{
-  text-align: center;
+  float: right;
 }
 
 #links > li{
@@ -47,6 +52,8 @@ ol li:nth-of-type(2n) {
 
 #ingredients {
   margin-top: 100px;
+  float: left;
+  margin-bottom: 90px;
 }
 
 label {
